@@ -1,5 +1,4 @@
 import User from '../models/User.js'
-// import handleDbError from '../helper/databaseErrorHandler.js'
 import mongoose from 'mongoose'
 //create a user
 const createUser = async(req,res,next)=>{
@@ -46,11 +45,11 @@ const getUser = async(req,res,next)=>{
 // update user
 const updateUser = async(req,res,next)=>{
     try {
-        const { userId } = req.params; 
+        const { id } = req.params; 
         const {name,email,password} = req.body;
-        // console.log(userId)
+        // console.log(id)
         const updatedUser = await User.findByIdAndUpdate(
-            userId,
+            id,
             {name,email,password},
             { new: true,runValidators:true, context: 'query' } ).select('-password')
         
@@ -70,7 +69,7 @@ const updateUser = async(req,res,next)=>{
 //delete user
 const removeUser =  async (req, res,next) => {
     try {
-      const deletedUser = await User.findByIdAndDelete(req.params.userId).select('-password');
+      const deletedUser = await User.findByIdAndDelete(req.params.id).select('-password');
       if (!deletedUser) {
         const error = new Error('User not found');
              error.status = 404;

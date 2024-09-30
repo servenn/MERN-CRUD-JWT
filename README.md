@@ -1,6 +1,6 @@
 #Simple Nodejs CRUD API with express and JWT authentication
 
-This is a simple Nodejs REST API using Express,Mongodb,and JWT authentication.The applicatio performs basic user  CRUD
+This is a simple Nodejs REST API using Express,Mongodb,and JWT authentication.The application performs basic user  CRUD
 (Create,Read,Update,Delete) operations and is secured with JWT-based authentication
 
 ## API EndPoints
@@ -46,4 +46,4 @@ PORT = 5000
 
 ```bash
 npm run dev
-``
+```

@@ -8,7 +8,7 @@ router.route('/api/users')
             .post(userControllers.createUser)
             .get(userControllers.getUsers)
             
-router.route('/api/users/:userId')
+router.route('/api/users/:id')
             .get(authControllers.authenticate,userControllers.getUser)
             .put(authControllers.authenticate,authControllers.isAuthorized,userControllers.updateUser)
             .delete(authControllers.authenticate,authControllers.isAuthorized,userControllers.removeUser)
