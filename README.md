@@ -15,8 +15,8 @@ This is a simple Nodejs REST API using Express,Mongodb,and JWT authentication.Th
 | /auth/signin/ | post | user login |
 
 ## Prerequisites
- -[Nodejs] installed
- -[Mongodb] installed and running locally or on a cloud service like Mongodb Atlas
+ -[Nodejs](https://nodejs.org/en/download/package-manager) installed
+ -[Mongodb](https://www.mongodb.com/docs/manual/installation/) installed and running locally or on a cloud service like Mongodb Atlas
  -[Postman] or [curl] to test the API
 
  ## Getting started
