@@ -42,7 +42,8 @@ jwt_secret = you-jwt-secret-key
 #port number
 PORT = 5000
 ```
-### 4. Start the server.The API will be running at http//:localhost:3000
+### 4. Start the server.
+The API will be running at http//:localhost:3000
 
 ```bash
 npm run dev
