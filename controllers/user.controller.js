@@ -1,5 +1,5 @@
 import User from '../models/User.js'
-import handleDbError from '../helper/databaseErrorHandler.js'
+// import handleDbError from '../helper/databaseErrorHandler.js'
 import mongoose from 'mongoose'
 //create a user
 const createUser = async(req,res,next)=>{
