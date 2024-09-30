@@ -16,7 +16,7 @@ This is a simple Nodejs REST API using Express,Mongodb,and JWT authentication.Th
 
 ## Prerequisites
  -[Nodejs] installed
- -[Mongodb] installed and running locall y or on a cloud service like Mongodb Atlas
+ -[Mongodb] installed and running locally or on a cloud service like Mongodb Atlas
  -[Postman] or [curl] to test the API
 
  ## Getting started
@@ -26,18 +26,24 @@ This is a simple Nodejs REST API using Express,Mongodb,and JWT authentication.Th
  ```bash
  git clone https://github.com/servenn/MERN-CRUD-JWT.git
  cd your-repository
+ ```
 
 ### 2.  Install dependencies
+```bash
     npm install
+```
 ### 3 . Set Up enviroment variables
 create a .env file in the root directory and add the following variables
-
+```bash
 #Mongodb connection string
 mongoUri: mongodb://localhost:27017/your-database-name
 #JWT secret-key
 jwt_secret = you-jwt-secret-key
 #port number
 PORT = 5000
-
+```
 ### 4. Start the server.The API will be running at http//:localhost:3000
+
+```bash
 npm run dev
+``
